@@ -1,0 +1,10 @@
+<h1>Bakersfield Village Fest</h1>
+<h2>Volunteer Signup</h2>
+
+<p>Sign up for the next group of volunteers at Village Fest</p>
+
+<%= form_tag('/vfsubscribe/subscribe', method: "post", id: "vfsubscribe", remote: "true") do -%>
+   <%= email_field(:email, :address, {id: "email", placeholder: "email address"}) %>
+   <%= submit_tag("Subscribe") %>
+<% end %>
+<div id="response">Response Will be displayed here</div> 
